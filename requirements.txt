@@ -1,0 +1,66 @@
+Game:
+
+1. cards from the stack come up in random order
+2. press 'down key' - it shows the meaning(backside)
+3. if you got it right, press right key
+   if you got it wrong, press left key
+   
+4. when the stack is exhausted, test is finished.
+5. when test is finished, show the percentage of correct answers / time spent to get the test done
+6. show buttons for restart or go back to menu
+7. have two modes of playing - exhaustive mode: until every word is correct / one run mode: just run once and show the score
+8. type mode: shows the meaning and have to type
+9. can choose deck. fresh deck / old deck
+10. if get correct the same word more times, the possibility of that word showing up goes down.
+
+
+
+Menu:
+
+1. Play
+
+2. Add words
+- Auto focus on the input form
+- when press enter, the word is added to the stack
+- is automatically added to the new stack
+
+
+
+3. Options
+- can set the threshold for passing the test
+- can set the time limit / word: when set, the time shows up to hundredths of a second
+- can manage stack
+- can choose when to merge the current stack to the whole stack
+- or all together form another pile of stack
+
+
+Objects:
+
+1. list
+- have cards inside
+
+2. card
+- word
+- meaning
+- keep track of correct or not
+
+3. game
+
+- start
+- progress bar
+- keydown event handling
+- restart
+- # of wrong
+
+4. menu
+
+- add words to the list
+- handle buttons to create list, add new items to the list, 
+- delete items from the list...
+
+5. option
+
+6. stack
+
+
+

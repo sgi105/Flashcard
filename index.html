@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flash Card</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--   start of menu part-->
+
+    <div class="menuPage">
+        <div class="menuPageWrapper">
+            <header>
+                <h1>Flash Cards</h1>
+            </header>
+            <div class="buttonList">
+                <button class="playButton menuButton">Play</button>
+                <button class="createListButton menuButton">Create List</button>
+                <button class="optionsButton menuButton">Options</button>
+                <button class="donateButton menuButton">Donate</button>
+            </div>
+
+            <footer>
+                <p>"Knowledge is Power"</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!--  end of menu-->
+
+    <!--   start of createListPage -->
+
+    <div class="createListPage">
+        <div class="createListPageWrapper">
+            <header>
+                <h1>Flash Cards</h1>
+            </header>
+            <div class="wordList">
+                <!--        words will be added dynamically-->
+                <!--
+                <div class="wordMeaningPair">
+                    <button class=deleteWordButton>-</button>
+                    <span class="wordNumber">1.</span>
+                    <span class="word">word</span>
+                    <span class="definition">- definition</span>
+                </div>-->
+            </div>
+            <form action="" class="addWordForm">
+                <div class="wordInputfield">
+                    <label for="wordInput">Word</label>
+                    <input type="text" class="wordInput" id="wordInput">
+                </div>
+
+                <div class="definitionInputfield">
+                    <label for="definitionInput">Definition</label>
+                    <input type="text" class="definitionInput" id="definitionInput">
+                </div>
+
+                <button class=addWordButton>+</button>
+            </form>
+
+            <button class="doneButton">Done</button>
+
+            <footer>
+                <p>"Knowledge is Power"</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!--  end of createListPage -->
+
+    <!--   game part of the app-->
+    <div class="gamePage">
+        <div class="gamePageWrapper">
+
+            <header>
+                <h1>Flash Cards</h1>
+            </header>
+            <main>
+                <div class="cardRow">
+                    <img class="leftArrow" src="img/arrow.JPG" alt="arrow">
+                    <h1 class="card">memorablemm</h1>
+                    <img class="rightArrow" src="img/arrow.JPG" alt="arrow">
+                </div>
+                <img class="downArrow" src="img/arrow.JPG" alt="arrow">
+            </main>
+
+
+            <footer>
+                <p>"Knowledge is Power"</p>
+            </footer>
+            <!--
+            <footer>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+            </footer>
+-->
+        </div>
+    </div>
+    <!--  end of game part  -->
+
+
+</body>
+
+
+<script src="js/Card.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/List.js"></script>
+<script src="js/app.js"></script>
+
+
+</html>
